@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("./assets/pexels-hikaique-125510.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-blend-mode: color;
+  background-color: rgba(220, 220, 220, 0.11);
+}
+.body{
+  height: 50vh;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+ .date{
+  padding: 20px;
+ }
+.weather-content{
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  h1{
+    font-size: 5rem;
+  }
+  span{
+    font-size: 24px;
+  }
+}
+.search{
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: rgba(220, 220, 220, 0.747);
+  border:none;
+  margin-right: 6px;
+}
+.btn{
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 20px;
+  color: gainsboro;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+.read{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin: 5rem 0;
+}
+.country{
+  background-color: rgba(220, 220, 220, 0.384);
+  padding: 10px 20px;
+  width: 250px;
+  text-align: center;
+  h3{
+    font-size: 24px;
+  }
+  h1{
+    font-size: 48px;
+  }
+  h4{
+    font-weight: 500;
+  }
+  }
+  .temperature{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(220, 220, 220, 0.384);
+    padding:15px 10px;
+    h4{
+      padding-bottom: 15px;
+    }
+  }
+  span{
+    float: right;
+  }
+  @media (max-width:800px) {
+    .read{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 3rem;
+      gap: 2rem;
+     }
+    
+  }
