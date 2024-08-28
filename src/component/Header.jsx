@@ -32,6 +32,7 @@ const Header = () => {
   const [max, setMax] = useState(0)
   const [visibility, setVisibility] = useState(0)
   const [wind, setWind] = useState()
+  const [ng, setNg] = useState("ng")
   
   async function getWeatherDefault () {
     const apikey = "19bd4e969d077d71612eeeffccac7b98"
@@ -46,6 +47,7 @@ const Header = () => {
       setMax((res.data.main.temp_max).toFixed(0))
       setVisibility(res.data.visibility)
       setWind(res.data.wind.speed)
+      setNg(res.data.sys.country)
       console.log(res.data)
     });
   };
@@ -63,6 +65,7 @@ const Header = () => {
       setMax((res.data.main.temp_max).toFixed(0))
       setVisibility(res.data.visibility)
       setWind(res.data.wind.speed)
+      setNg(res.data.sys.country)
       console.log(res.data)
     });
   };
@@ -94,7 +97,7 @@ const Header = () => {
     <div className="read">
     <div className="country">
           <h1>{temp}°C</h1>
-          <h3>{cityName}</h3>
+          <h3>{cityName},<span>{ng}</span></h3>
           <h4>{description}</h4>
     </div>
         <div className="temperature">

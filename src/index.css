@@ -80,7 +80,11 @@ body{
       padding-bottom: 15px;
     }
   }
-  span{
+  h3 span{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  h4 span{
     float: right;
   }
   @media (max-width:800px) {
